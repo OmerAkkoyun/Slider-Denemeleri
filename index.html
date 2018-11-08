@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>sliders with bootstrap</title>
+    <link rel="stylesheet" href="assest/css/bootstrap.min.css">
+    <style>
+        body {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+
+    <!--Basit Slider-******************************-->
+    <div class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <img class="d-block w-100" src="https://dummyimage.com/800x400/000000/ffffff.jpg&text=Deneme+slide1" alt="ilk resim">
+
+
+            </div>
+            <div class="carousel-item">
+
+                <img class="d-block w-100" src="https://dummyimage.com/800x400/000000/ffffff.jpg&text=Deneme+slide2" alt="ikinci resim">
+
+
+            </div>
+            <div class="carousel-item">
+
+                <img class="d-block w-100" src="https://dummyimage.com/800x400/000000/ffffff.jpg&text=Deneme+slide3" alt="ucuncu resim">
+
+
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+
+
+
+    <!--sağ ve sol ikonlu yöntem Slider-******************************-->
+    <div id="slide1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <img class="d-block w-100" src="https://dummyimage.com/800x400/000000/ffffff.jpg&text=Deneme+slide1" alt="ilk resim">
+
+
+            </div>
+            <div class="carousel-item">
+
+                <img class="d-block w-100" src="https://dummyimage.com/800x400/000000/ffffff.jpg&text=Deneme+slide2" alt="ikinci resim">
+
+
+            </div>
+            <div class="carousel-item">
+
+                <img class="d-block w-100" src="https://dummyimage.com/800x400/000000/ffffff.jpg&text=Deneme+slide3" alt="ucuncu resim">
+
+
+            </div>
+        </div>
+        <!-- burası bizim icon oluştracağımız yer.carousel-inner seviyesinde ve ondan altta olacak-->
+        <a class="carousel-control-prev" href="#slide1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#slide1" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+
+
+
+
+
+    <!--alttan ikonlu yöntem Slider (indicators)******************-->
+    <br><br>
+    <div id="slide2" class="carousel slide" data-ride="carousel">
+
+        <!-- burası bizim alttan icon oluştracağımız yer.carousel-inner seviyesinde ve ondan önce olacak-->
+        <ol class="carousel-indicators">
+            <li data-target="#slide2" data-slide-to="0" class="active"></li>
+            <li data-target="#slide2" data-slide-to="1"></li>
+            <li data-target="#slide2" data-slide-to="2"></li>
+
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <img class="d-block w-100" src="https://dummyimage.com/800x400/000000/ffffff.jpg&text=Deneme+slide1" alt="ilk resim">
+
+
+            </div>
+            <div class="carousel-item">
+
+                <img class="d-block w-100" src="https://dummyimage.com/800x400/000000/ffffff.jpg&text=Deneme+slide2" alt="ikinci resim">
+
+
+            </div>
+            <div class="carousel-item">
+
+                <img class="d-block w-100" src="https://dummyimage.com/800x400/000000/ffffff.jpg&text=Deneme+slide3" alt="ucuncu resim">
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <br><br>
+    <!--Slaytlara text ekleme// img nin hemen altına div açıp ekliyeceğiz*************************-->
+    <div id="slide3" class="carousel slide" data-ride="carousel">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <img class="d-block w-100" src="https://dummyimage.com/800x400/000000/ffffff.jpg&text=Deneme+slide1" alt="ilk resim">
+                <div class="carousel-caption d-none d-md-block">
+                    <!--md cihazlarda ve üstündekilerde gözükür sadece.-->
+                    <h5>slider Header 1</h5>
+                    <p>slayt yazısı testi</p>
+                </div>
+
+
+            </div>
+            <div class="carousel-item">
+
+                <img class="d-block w-100" src="https://dummyimage.com/800x400/000000/ffffff.jpg&text=Deneme+slide2" alt="ikinci resim">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>slider Header 2</h5>
+                    <p>slayt yazısı testi</p>
+                </div>
+
+
+            </div>
+            <div class="carousel-item">
+
+                <img class="d-block w-100" src="https://dummyimage.com/800x400/000000/ffffff.jpg&text=Deneme+slide3" alt="ucuncu resim">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>slider Header 3</h5>
+                    <p>slayt yazısı testi</p>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- burası bizim icon oluştracağımız yer.carousel-inner seviyesinde ve ondan altta olacak-->
+        <a class="carousel-control-prev" href="#slide3" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#slide3" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <!--Slayt hızını ayaralyabilriz 1.5 saniye yapalım //Jquery kodu-->
+    <script>
+        $('.carousel').carousel({
+            interval:1500
+        }
+        
+        )
+    </script>
+
+</body>
+
+</html>
